@@ -1,0 +1,17 @@
+.board-container{
+    color: white
+
+}
+
+.herd-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.newherd{
+    display: flex;
+    justify-content: center;
+    background-color: #00120B;
+    padding:var(--m);
+}

@@ -1,0 +1,39 @@
+/*importing styles from general utilities css sheet*/
+
+/*dimensions for navigation bar*/
+.NavBar-container {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--tertiary);
+  overflow-x: hidden;
+  padding-top: var(--s);
+}
+
+/*design for words in navigation bar*/
+.NavBar-title {
+  color: var(--white);
+  font-size: 16px;
+}
+
+/*design for links on navigation bar*/
+.NavBar-linkContainer {
+  margin-top: var(--m);
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+}
+
+/*when mouse hovers over link, should become underlined*/
+.NavBar-link:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.NavBar-link:visited {
+  /*when link is clicked, should switch pages and get rid of whole .NavBar*/
+  opacity: 0;
+}

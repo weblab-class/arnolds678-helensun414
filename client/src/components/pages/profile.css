@@ -1,0 +1,16 @@
+.Person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+
+.HerdList {
+  border-style: none;
+}
+
+.Profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

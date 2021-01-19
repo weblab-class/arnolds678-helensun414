@@ -1,0 +1,9 @@
+.herd{
+    border-radius: 50px;
+    background-color: #00120B;
+    color: white;
+    margin: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}

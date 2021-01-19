@@ -1,0 +1,13 @@
+.tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uncompleted{
+    background-color:red;
+}
+
+.completed{
+    background-color:green;
+}
