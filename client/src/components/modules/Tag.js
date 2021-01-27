@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import {post} from "../../utilities.js"
+import {get, post} from "../../utilities.js"
 
 import "./Tag.css"
 // import NewTag from "./NewTagInput";
@@ -13,9 +13,6 @@ class Tag extends Component {
         this.state={
             completed: false,
         }
-        // this.state = {
-        //     value: value
-        // };
     }
 
     // handleTag = (e, value) => {
@@ -31,11 +28,35 @@ class Tag extends Component {
     // };
 
     completeTask = (event) =>{
+        const body = {
+            userId: this.props.userId,
+            creator_id: this.props.creator_id,
+            creator_name: this.props.creator_name,
+            parent: this.props.parent,
+            content: this.props.content,
+        }
+        post("/api/achievements", body).then((msg) => {
+            if(msg.content === "already achieved"){
+                alert("You have already achieved this task!");
+            }
+        });
+
         this.setState({
             completed: true,
-        });
-        post("/api/tags", {completed: true});
+        })
+
+        
     };
+
+    componentDidMount(){
+        get("/api/achievements", {userId: this.props.userId}).then((achievementObjs) => {
+            achievementObjs.map((achievementObj) => {
+              if(achievementObj.content === this.props.content && achievementObj.parent === this.props.parent){
+                  this.setState({completed: true});
+              }
+            });
+        });
+    }
 
     render(){
         let completion = null;
@@ -53,6 +74,9 @@ class Tag extends Component {
             <div className="tag">
                 <div className = "indiv-tag">
                     {completion}
+                    <div className = "tag-creator">
+                        Created By: {this.props.creator_name}
+                    </div>
                 </div>
                 <button
                     type='button'
@@ -62,15 +86,6 @@ class Tag extends Component {
                 >
                 </button>
             </div>
-
-
-
-
-            // <div className="complete-task">
-            //     <input onClick={event => this.handleTag(e, value=this.props.content)}  value= {this.props.content}/>
-
-            //     <button onClick={() => deleteTag(value)}>x</button>
-            // </div>
         ) 
     }
 }

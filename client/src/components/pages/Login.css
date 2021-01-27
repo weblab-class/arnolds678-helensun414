@@ -2,12 +2,12 @@
 
 body {
   background-color: #35605a;
-  animation: mymove 20s infinite;
+  /*animation: mymove 20s infinite;*/
 }
 
-@keyframes mymove {
+/*@keyframes mymove {
   0% {
-    background-color: #35605a;
+    background-color: #;
     left: 0px;
     top: 0px;
   }
@@ -21,7 +21,7 @@ body {
     left: 0px;
     top: 0px;
   }
-}
+}*/
 
 .activiTag {
   display: flex;
@@ -31,6 +31,21 @@ body {
   font-family: "Comfortaa", "cursive";
   font-size: 100px;
   color: white;
+  height: 80vh;
+  animation-name: logo;
+  animation-duration: 20s;
+}
+
+@keyframes logo {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #31e981;
+  }
+  100% {
+    color: white;
+  }
 }
 
 .googleLogin {

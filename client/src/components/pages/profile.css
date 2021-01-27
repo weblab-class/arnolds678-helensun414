@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: center;
   border-style: none;
+  font-size: 25px;
+  color: #6b818c;
+  text-decoration: underline;
 }
 
 .HerdList {
@@ -10,7 +13,19 @@
 }
 
 .Profile-container {
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  flex-grow: 2;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+.Profile-title {
+  font-family: "Hind Vadodara", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
 }

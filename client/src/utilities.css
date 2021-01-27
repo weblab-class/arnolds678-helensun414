@@ -16,14 +16,15 @@
 
 /* font change Comfortaa */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap");
 
 :root {
-  --primary: #35605A;
-  --primary--dim: #31E981;
-  --secondary: #00120B;
-  --tertiary: #6B818C;
-  --quarternary: #D8E4FF;
-  --highlight: #D8E4FF;
+  --primary: #35605a;
+  --primary--dim: #31e981;
+  --secondary: #00120b;
+  --tertiary: #6b818c;
+  --quarternary: #d8e4ff;
+  --highlight: #d8e4ff;
   --darkgrey: #d4d4d4;
   --medgrey: #e0e0e0;
   --grey: #f7f7f7;

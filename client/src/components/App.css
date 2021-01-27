@@ -1,13 +1,15 @@
-.app-container{
-    background-color: #35605A;
-    
+.app-container {
+  background-color: #35605a;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .crossed-line {
-    text-decoration: line-through;
-    display:flex;
+  text-decoration: line-through;
+  display: flex;
 }
 
-.page-container{
-    margin-left: 100px;
+.page-container {
+  /* margin-left: 100px; */
+  height: 100%;
 }

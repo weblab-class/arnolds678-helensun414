@@ -1,49 +1,47 @@
 import React, { Component } from "react";
-import { post } from "../../utilities.js"
-
+import { post } from "../../utilities.js";
 
 class NewTaskInput extends Component {
-    constructor(props){
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            value: "",
-        };
+    this.state = {
+      value: "",
     };
+  }
 
-    handleChange = (event) => {
-        this.setState({
-            value: event.target.value,
-        });
-    };
-    
-    handleSubmit = (event) => {
-        event.preventDefault();
-        this.props.onSubmit && this.props.onSubmit(this.state.value);
-        this.setState({
-            value:"",
-        });
-    };
-    
-    render(){
-        return(
-            <div>
-                <input 
-                    type="text"
-                    placeholder={this.props.defaultText}
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                />
-                <button
-                    type="submit"
-                    value='Submit'
-                    onClick={this.handleSubmit}
-                >
-                    Submit!
-                </button>
-            </div>
-        );
-    }
+  handleChange = (event) => {
+    this.setState({
+      value: event.target.value,
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.onSubmit && this.props.onSubmit(this.state.value);
+    this.setState({
+      value: "",
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          placeholder={this.props.defaultText}
+          value={this.state.value}
+          onChange={this.handleChange}
+          className="add-new-herd"
+        />
+        <div className="submit-button">
+          <button type="submit" value="Submit" onClick={this.handleSubmit}>
+            submit!
+          </button>
+        </div>
+      </div>
+    );
+  }
 }
 
 // class NewHerd extends Component {
@@ -63,6 +61,4 @@ class NewTaskInput extends Component {
 //     }
 // }
 
-
 export default NewTaskInput;
-

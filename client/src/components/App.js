@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound.js";
 import NavBar from "./modules/NavBar.js";
 import Board from "./pages/Board.js";
 import Profile from "./pages/Profile.js";
+import HerdPage from "./pages/HerdPage.js";
 
 import "../utilities.css";
 
@@ -69,6 +70,7 @@ class App extends Component {
 
               <Board path="/Board" userId={this.state.userId}></Board>
               <Profile path="/profile/:userId" />
+              <HerdPage path="/herd/:herdId" userId={this.state.userId}/>
               <NotFound default />
             </Router>
           </div>

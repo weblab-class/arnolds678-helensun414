@@ -9,14 +9,24 @@
   top: 0;
   left: 0;
   background-color: var(--tertiary);
+  opacity: 0;
   overflow-x: hidden;
   padding-top: var(--s);
+}
+
+.NavBar-container:hover {
+  background-color: var(--tertiary);
+  opacity: 100%;
 }
 
 /*design for words in navigation bar*/
 .NavBar-title {
   color: var(--white);
   font-size: 16px;
+  font-family: "Comfortaa", "cursive";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*design for links on navigation bar*/
@@ -24,7 +34,12 @@
   margin-top: var(--m);
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* margin: 20px; */
+}
+
+.NavBar-link {
+  font-family: "Hind Vadodara", sans-serif;
 }
 
 /*when mouse hovers over link, should become underlined*/

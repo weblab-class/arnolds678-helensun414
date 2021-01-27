@@ -1,4 +1,4 @@
-//The side navbar with links to profile, and probably others 
+//The side navbar with links to profile, and probably others
 import React, { Component } from "react";
 import { Link } from "@reach/router";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
@@ -22,16 +22,16 @@ class NavBar extends Component {
         <div className="NavBar-title">activiTag</div>
         <div className="NavBar-linkContainer">
           <Link to="/" className="NavBar-link">
-            Home
+            home
           </Link>
           {this.props.userId && (
             <Link to={`/profile/${this.props.userId}`} className="NavBar-link">
-              Profile
+              profile
             </Link>
           )}
           {this.props.userId && (
             <Link to={`/Board/`} className="NavBar-link">
-              Board
+              board
             </Link>
           )}
           {/* {this.props.userId ? (

@@ -1,0 +1,12 @@
+.submit-button {
+  background-color: #00120b;
+  border: none;
+  color: white;
+}
+
+.add-new-herd {
+  border: none;
+  color: white;
+  background-color: #00120b;
+  text-decoration: underline;
+}

@@ -1,13 +1,25 @@
-.tag{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Hind Vadodara", sans-serif;
 }
 
-.uncompleted{
-    background-color:red;
+.uncompleted {
+  background-color: red;
 }
 
-.completed{
-    background-color:green;
+.completed {
+  background-color: green;
+}
+
+.tag-creator {
+  font-size: 10px;
+  opacity: 70%;
+}
+
+.indiv-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,17 +1,32 @@
-.board-container{
-    color: white
-
+.board-container {
+  color: white;
 }
 
-.herd-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.herd-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
 }
 
-.newherd{
-    display: flex;
-    justify-content: center;
-    background-color: #00120B;
-    padding:var(--m);
+.newherd {
+  display: flex;
+  justify-content: center;
+  background-color: #00120b;
+  padding: var(--m);
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00120b;
+  font-family: "Comfortaa", cursive;
+  font-size: 50px;
+}
+
+.add-new-herd {
+  border: none;
+  color: white;
+  background-color: #00120b;
+  text-decoration: underline;
 }

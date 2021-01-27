@@ -19,7 +19,8 @@ class TagBlock extends Component {
                     creator_name={tag.creator_name}
                     creator_id={tag.creator_id}
                     content={tag.content}
-                    completed={tag.completed}
+                    parent={tag.parent}
+                    userId={this.props.userId}
                     />
                 ))}
 
